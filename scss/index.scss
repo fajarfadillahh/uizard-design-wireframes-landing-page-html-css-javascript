@@ -218,3 +218,27 @@ img {
     transform: scaleY(1);
   }
 }
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data,
+  &__video {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-watch {
+      background-color: $white-color;
+      border: 2px solid $black-color;
+    }
+  }
+}
