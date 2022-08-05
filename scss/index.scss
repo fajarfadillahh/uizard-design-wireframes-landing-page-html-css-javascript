@@ -231,6 +231,10 @@ img {
     justify-self: center;
   }
 
+  &__video {
+    border-radius: 12px;
+  }
+
   &__buttons {
     display: flex;
     flex-direction: column;
@@ -297,6 +301,7 @@ img {
   &__group {
     display: flex;
     justify-content: center;
+    justify-self: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2.5rem 3rem;
@@ -304,5 +309,28 @@ img {
 
   &__img {
     width: 120px;
+  }
+}
+
+// ===== FEATURES SECTION =====
+.features {
+  &__group {
+    display: grid;
+    gap: 6rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 3rem;
+
+    &-data {
+      text-align: center;
+      justify-self: center;
+    }
+
+    &-video {
+      border-radius: 12px;
+      overflow: hidden;
+    }
   }
 }
