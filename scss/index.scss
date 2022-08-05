@@ -112,7 +112,7 @@ img {
   font-size: 15px;
   font-weight: $font-semibold;
   color: $black-color;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .container {
@@ -162,7 +162,7 @@ img {
       padding: 2rem;
       background-color: $white-color;
       box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.2);
-      border-radius: 10px;
+      border-radius: 12px;
       transition: $transition-400;
       opacity: 0;
       transform: scaleY(0);
@@ -316,7 +316,7 @@ img {
 .features {
   &__group {
     display: grid;
-    gap: 6rem;
+    gap: 3rem;
   }
 
   &__content {
@@ -331,6 +331,43 @@ img {
     &-video {
       border-radius: 12px;
       overflow: hidden;
+    }
+  }
+}
+
+// ===== CATEGORY SECTION =====
+.category {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__content {
+    background-color: $white-color;
+    transition: $transition-400;
+
+    &-img {
+      border-radius: 12px;
+    }
+
+    &-data {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
     }
   }
 }
