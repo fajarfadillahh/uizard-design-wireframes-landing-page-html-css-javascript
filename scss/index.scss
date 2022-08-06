@@ -867,3 +867,9 @@ img {
     justify-self: center;
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: rgba($color: #ffc600, $alpha: 0.7);
+  color: $black-color;
+}
