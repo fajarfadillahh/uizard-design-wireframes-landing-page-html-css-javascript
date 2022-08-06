@@ -546,3 +546,65 @@ img {
     color: $white-color;
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding: 8rem 0 2rem;
+
+  &__container {
+    gap: 6rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 3rem;
+  }
+
+  &__data {
+    &-icon {
+      width: 120px;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__content {
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: $margin-1-5;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-link {
+      position: relative;
+      font-size: 15px;
+      color: $grey-color;
+
+      &:hover {
+        color: $black-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copy {
+    padding-top: 2rem;
+    border-top: 2px solid rgba($color: #000000, $alpha: 0.1);
+    text-align: center;
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+  }
+}
