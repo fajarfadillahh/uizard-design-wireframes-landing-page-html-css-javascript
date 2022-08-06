@@ -661,3 +661,41 @@ img {
     border-radius: 15px;
   }
 }
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .section-title {
+    font-size: 38px;
+  }
+
+  .home__data,
+  .partner__data,
+  .features__content-data,
+  .category__data,
+  .pricing__data,
+  .blog__data,
+  .callback__data {
+    width: 500px;
+  }
+
+  .home__video,
+  .features__content-video {
+    width: 500px;
+  }
+
+  .home__text,
+  .callback__text {
+    width: 400px;
+    margin: 0 auto 2rem;
+  }
+
+  .home__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .features__content-button,
+  .callback__button {
+    display: inline-flex;
+  }
+}
