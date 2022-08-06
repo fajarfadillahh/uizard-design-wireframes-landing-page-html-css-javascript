@@ -613,3 +613,30 @@ img {
     line-height: $leading-text;
   }
 }
+
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -100%;
+  width: 55px;
+  height: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba($color: #ffc600, $alpha: 0.8);
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: $black-color;
+  transition: $transition-400;
+
+  &:hover {
+    background-color: rgba($color: #ffc600, $alpha: 1);
+  }
+
+  // scrollup section
+  &.scroll-action {
+    bottom: 3rem;
+  }
+}
