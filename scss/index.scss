@@ -348,12 +348,19 @@ img {
 
   &__group {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+    justify-content: center;
     gap: 3rem;
   }
 
   &__content {
-    background-color: $white-color;
+    border-radius: 12px;
+    overflow: hidden;
     transition: $transition-400;
+
+    &:hover {
+      box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.2);
+    }
 
     &-img {
       border-radius: 12px;
