@@ -812,6 +812,7 @@ img {
       position: relative;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
+      overflow: hidden;
     }
 
     &__data {
@@ -831,5 +832,38 @@ img {
       right: -5%;
       width: 500px;
     }
+  }
+}
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .section-title {
+    font-size: 56px;
+  }
+
+  .home__title {
+    width: 480px;
+  }
+
+  .category__data {
+    width: 620px;
+  }
+
+  .blog__data {
+    width: 700px;
+  }
+
+  .callback {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__img {
+      width: 600px;
+    }
+  }
+
+  .footer__content {
+    justify-self: center;
   }
 }
