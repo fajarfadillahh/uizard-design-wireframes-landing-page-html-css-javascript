@@ -471,3 +471,58 @@ img {
     }
   }
 }
+
+// ===== BLOG SECTION =====
+.blog {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    background-color: $white-color;
+    transition: $transition-400;
+
+    &-img {
+      border-radius: 12px;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-date {
+      font-size: 15px;
+      color: $grey-color;
+    }
+
+    &-read {
+      padding: 0.1rem 0.8rem;
+      background-color: $black-color;
+      border-radius: 10rem;
+      color: $white-color;
+    }
+  }
+}
