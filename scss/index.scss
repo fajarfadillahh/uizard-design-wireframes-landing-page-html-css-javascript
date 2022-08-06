@@ -371,3 +371,96 @@ img {
     }
   }
 }
+
+// ===== PRICING SECTION =====
+.pricing {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    border-radius: 12px;
+
+    &-class {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: 0.5rem;
+    }
+
+    &-price,
+    &-text {
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $black-color;
+    }
+
+    &-number {
+      font-size: 52px;
+      font-weight: $font-semibold;
+      color: $black-color;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $black-color;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.2rem;
+      color: $black-color;
+    }
+
+    &-button {
+      background-color: rgba($color: #ffc600, $alpha: 0.2);
+      border: 2px solid $yellow-color;
+      color: $black-color;
+    }
+  }
+
+  &__content:nth-child(2) {
+    background-color: $black-color;
+
+    .pricing__content-class,
+    .pricing__content-price,
+    .pricing__content-number,
+    .pricing__content-text,
+    .pricing__content-item,
+    .pricing__content-icon {
+      color: $white-color;
+    }
+
+    .pricing__content-button {
+      border-color: $white-color;
+      background-color: $white-color;
+      color: $black-color;
+    }
+  }
+}
