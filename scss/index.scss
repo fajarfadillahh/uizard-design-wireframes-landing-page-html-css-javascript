@@ -139,6 +139,11 @@ img {
   z-index: $z-fixed;
   transition: $transition-400;
 
+  // sticky action
+  &.sticky-action {
+    box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.2);
+  }
+
   &__container {
     height: $header-height;
     display: flex;
@@ -584,7 +589,7 @@ img {
     &-list {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.7rem;
     }
 
     &-link {
